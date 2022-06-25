@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+<body>
+    
+    <nav class="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="chekbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="data:image/jpeg;base64,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" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="#inicio">inicio</a></li>
+            <li><a href="#informacion">Información</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
+        </ul>       
+    </nav>
+    
+    <main id="inicio" class="inicio "><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium?</p></main>
+    <h1 class="tittle">Lorem ipsum dolor <span>ipsum dolor!</span></h1>
+<section id="informacion">
+  <div class="titulo">
+    
+    <p class=><span> 1 </span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel laborum possimus ipsam ducimus odit, Lorem ipsum dolor sit amet consectetur adipisicing elit.libero nostrum magnam iure eaque autem maioris quibusdam iste quae perferendis cum totam, maiores voluptaa dolorum sit.</p>
+    <p class=><span> 2 </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maxime a sed cumque reprehenderit, nulla quasi voluptates commodi minima deserunt nihil hic. Totam odio ducimus reprehenderit doloendida repellat.</p>
+    <p><span> 3 </span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel magni, molestiae cum recusandae aspernatur incidunt enim eos inventore ut illum velit nesciunt tempore eum. Eveniet.</p>
+  </div>
+  <div class="nosotros-img">
+    <img src="imagenees/sarro2.jpg" alt="">
+    <!-- <img src="imagenees/sarro1.jpg" alt=""> -->
+    <img src="imagenees/cloro1.jpg" alt="">
+    <img src="imagenees/cloro2.jpg " alt="">
+  </div>
+    
+</section>
+
+<h2 class="titulo_productos">NUESTROS EQUIPOS!</em></h2>
+
+<section id="productos" class="cards">
+    <div class="item1">
+        <img src="imagenees/purificador1.jpg" alt=""></img>
+        <h3>amet consectetur. </h3>
+        <button>Mas informacion</button>    
+    </div>    
+    <div class="item2">
+        <img src="imagenees/purificador2.jpg" alt=""></img>
+        <h3>adipisicing elit.</h3>
+        <button>Mas informacion</button>
+    </div> 
+    <div class="item3">
+        <img src="imagenees/purificador3.jpg" alt=""></img>
+        <h3>Lorem ipsum </h3>
+        <button>Mas informacion</button>
+    </div> 
+    <div class="item4">
+        <img src="imagenees/purificador4.jpg" alt=""></img>
+        <h3>dolor sit.</h3>
+        <button>Mas informacion</button>
+    </div> 
+    <div class="item5">
+        <img src="imagenees/purificador5.jpg" alt=""></img>
+        <h3> Illo, enim!</h3>
+        <button>Mas informacion</button>
+    </div> 
+    <div class="item6">
+        <img src="imagenees/purificador6.jpg" alt=""></img>
+        <h3> quam adipisci</h3>
+        <button>Mas informacion</button>
+    </div>        
+</section>
+<section class="formulario">
+
+<form id="contacto">
+    <h3 class="form_titulo animate__animated animate__fadeIn">¿Lorem ipsum dolor sit, amet consectetur adipisicing elit? <br><p>Solicita acesoramiento!</p> </h3>
+    
+    <div class="form_container">
+        <div class="form__group">
+            <input type="text" id="name" class="form_input" placeholder=" ">
+            <label for="name" class="form_label">Nombre:</label>
+            <span class="form_line"></span>
+        </div><div class="form__group">
+            <input type="tel" id="number" class="form_input" placeholder=" ">
+            <label for="tel" class="form_label">Telefono:</label>
+            <span class="form_line"></span>
+        </div><div class="form__group">
+            <input type="textarea" id="name" class="form_input" placeholder=" ">
+            <label for="textarea" class="form_label textarea">Consulta:</label>
+            <span class="form_line"></span>
+        </div>
+
+        <input type="submit" value="Enviar" class="form_submit">
+    </div>
+
+</form>
+</section>
+<hr>
+<footer id="sobrenosotros" class="pie-pagina">
+<div class="group1">
+    <div class="box">
+    <figure>
+        <a href="#">
+            <img src="imagenees/logo.jpg" alt="logo">
+        </a>
+    </figure>
+    </div>
+        <div class="box">
+            <h3>Sobre Nosotros.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, tenetur!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, possimus.</p>
+        </div>
+    <div class="box">
+        <h3>Redes sociales.</h3>
+        <div class="red-social">
+       <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+       <a href="#"><i class="fa fa-whatsapp"></i> Whatsapp</a>
+       <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+       <a href="#"><i class="fa fa-facebook"> Facebook</i></i></a>
+    </div>
+  </div>
+</div>
+<div class="groou2">
+    <small>&copy;2020 <b>FDC</b> Todos los derechos reservados</small>
+</div>
+</footer>
+
+
+
+</body>
+</html> 

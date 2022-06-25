@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+body {
+    background: rgb(4,158,251);
+background: linear-gradient(90deg, white 0%, rgba(4,158,251,1) 100%) no-repeat no-repeat;
+}   
+
+nav{
+    background: rgb(255, 255, 255); 
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    box-shadow: 10px 9px 5px -4px rgba(0,0,0,0.75);
+ 
+/* background: linear-gradient(90deg, white 0%, rgba(4,158,251,1) 100%) no-repeat no-repeat; */
+}   
+ 
+
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    
+}
+
+.logo {
+    height: 55px;
+    /* border:  solid 2px black; */
+    border-radius: 20%;
+}
+
+nav ul{
+
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li { 
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    /* border-radius: 3px; */
+    text-transform: uppercase;
+    
+        
+}
+
+li a:active, li a:hover{
+   
+    transition: .5s;
+    opacity: 50%;
+    
+}
+
+
+.chekbtn {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display:none;
+}
+
+main {
+    background-image: url(imagenees/sarro3.jpg) ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    /* text-align: center; */
+    border: 1px solid black; 
+ 
+}
+main p{
+    padding: 150px;
+    font-size: 40px;
+    text-transform: uppercase; 
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.51);
+    
+}
+    
+   
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(9, 108, 189);
+    margin: 40px;
+    text-transform: capitalize;
+    text-shadow: 2px 1px 4px rgba(0,0,0,0.42);
+    
+    
+
+}
+
+
+#nosotros{
+    display: flex;    
+    flex-direction: column;
+    margin:auto;
+    gap: 50px; 
+    object-fit: cover;   
+}
+
+
+.titulo {
+    text-align: center;
+    display: flex;
+    align-items: space-around;
+    flex-direction: row;
+    gap: 40px;
+    margin: 40px;
+    padding: 20px 5px;  
+    flex-wrap: nowrap; 
+   
+}
+
+.tittle span{
+    color: rgb(8, 8, 131);
+    text-shadow: 2px 1px 4px rgba(0,0,0,0.42);
+}
+
+.titulo p {
+    font-size: 25px;
+    font-weight: 3px;
+    color: rgb(0, 0, 0);
+    border-radius: 3%;
+    padding: 30px 15px;
+    border: 1px solid black;
+    box-shadow: 1px 10px 15px black;
+   
+    
+    
+
+}
+
+.titulo p span {
+    background-color:rgb(6, 135, 240) ;
+    border-radius: 75%;
+    font-size: 35px;
+    text-shadow: 2px 1px 4px rgba(0,0,0,0.42);
+    
+    
+
+}
+.nosotros-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-left: 50px;
+    border-bottom: 1px solid black;
+    padding-bottom: 60px;
+    justify-content: center;
+    
+}
+.nosotros-img img{
+    border-radius: 7%;
+    box-shadow: 10px 9px 5px -4px rgba(0,0,0,0.75);
+    
+}
+
+.cards {
+    display: flex;
+    /* background-color: white; */
+    justify-content: center;
+    align-items: center;
+    align-content:space-around ;
+    gap: 40px;
+    flex-wrap: wrap;
+  
+    
+    
+}
+.cards div{
+    background-color: white;
+    object-fit:cover;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 1px 1px 9px 5px rgba(0,0,0,0.38);
+    margin-bottom: 20px;
+
+    
+}
+
+.cards div img {
+    margin:10px;
+    width: 220px;
+    height: 220px;
+    
+    
+}
+
+.cards div h3 {
+    font-size: 25px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.51);
+}
+
+.cards div button{
+padding: 7px;
+background-color: rgb(61, 191, 252);
+color: rgb(0, 0, 0);
+border-radius: 10%;
+border:none;
+font-size: 20px;
+cursor: pointer;
+
+}
+
+.cards div button:hover{
+    background-color: rgb(14, 144, 219);
+    transition: 1s;
+}
+
+
+.titulo_productos {
+    text-align: center;
+    font-size:50px;
+    padding: 100px;
+    color:  rgb(3, 118, 212);
+    text-shadow: 2px 1px 4px rgba(0,0,0,0.42);
+}
+.formulario {
+    display: flex;
+    /* background-color: rgb(6, 135, 240); */
+    min-height: 100vh;
+    
+    
+}
+form {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    width: 90%;
+   max-width: 1000px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+   
+   justify-content: center;
+    gap: 50px;
+    text-align: center;
+
+
+
+
+}
+
+.form_titulo  {
+     
+    font-size:35px;
+    color: rgb(0, 138, 252);
+    text-align: center;
+    
+
+}
+
+.form_titulo p{
+    font-size: 18px;
+    padding: 10px;
+    color: black;
+}
+
+
+.form_container {
+    margin-top: 3em;
+    display: flex;
+    gap: 2.5em;
+    flex-direction: column;
+    width: 50%;
+    min-width: 200px;
+    
+}
+
+.form__group{
+    position: relative;
+    
+}
+
+.form_input{
+    width: 100%;
+
+    background: none;
+    font-size: .9rem;
+    padding: 1.2em .3em .5em .5em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(6, 135, 240);
+}
+
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform:translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: rgb(0, 24, 235);
+}
+
+.form_label{
+    color: rgb(6, 135, 240);
+    cursor: pointer;
+    position:absolute;
+    top:0px;
+    left: 5px;
+    
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+   
+}
+
+.form_submit{
+    background-color: rgb(61, 191, 252);
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+.form_submit:hover {
+    background-color: rgb(0, 94, 156);
+    transition: 2s;
+}
+
+
+
+.form_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 124, 226);
+    transform: scale(0);
+    transform: left bottom;
+    transform: transform .4s;
+}
+
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(.9);
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: white;
+    
+    
+}
+
+.pie-pagina .group1 {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    padding: 45px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img{
+    width: 250px;
+
+}
+
+.group1 .box h3{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.group1 .box p{
+    color: black;
+    margin-bottom: 10px;
+}
+
+.red-social a{
+    display: inline-block;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 22px;
+    text-align: center;
+    
+
+}
+
+
+.group2 {
+    background-color: aquamarine;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+
+}
+
+.group2 small{
+    font-size: 15px;
+    
+}
+
+
+
+
+
+
+@media (max-width:952px){
+
+    .enlace {
+        padding-left: 20px;
+        
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .nosotros-img{
+        gap: 20px;
+    }
+    
+}
+
+
+
+@media (max-width:858px){
+    .chekbtn{
+        display: block;
+
+    }
+
+    .titulo{
+        flex-wrap: wrap; 
+       
+    }
+
+
+    form {
+        flex-direction: column;
+    }
+
+
+
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(49, 142, 230);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px ;
+        line-height: 30px;
+
+    }
+    nav ul li {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        
+    }
+
+    nav ul li a{
+
+        color: rgb(0, 0, 0);
+    }
+
+
+    li a:hover, li a:active {
+        background: none;
+        color: rgb(6, 135, 240);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+  
+
+    main p{
+        padding: auto;
+        font-size: 20px;
+        text-transform: uppercase; 
+        color: white;
+        text-align: center;
+        text-shadow: 3px 3px 5px rgba(0,0,0,0.51);
+        
+    }
+
+    .pie-pagina .group1 {
+        width: 100%;
+        margin-left: 10px;
+        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 35px 0px;
+        
+    }
+
+
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 1.5s;
+  }
+
+
